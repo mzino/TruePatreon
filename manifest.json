@@ -1,0 +1,13 @@
+{
+   "manifest_version": 2,
+   "name": "TruePatreon",
+   "version": "0.1",
+   "description": "Display more realistic and extensive pledge values in Patreon pages",
+   "icons": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" },
+   "content_scripts": [
+      {
+         "matches": [ "http://www.patreon.com/*", "https://www.patreon.com/*" ],
+         "js": [ "external/jquery-2.1.4.min.js", "external/money.min.js", "main.js" ]
+      }
+   ]
+}
